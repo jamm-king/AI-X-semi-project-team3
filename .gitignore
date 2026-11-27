@@ -1,0 +1,60 @@
+# 로컬 환경 변수와 비밀값
+.env
+.env.*
+!.env.example
+!.env.*.example
+!.env.template
+
+# React 패키지, 빌드 결과, 테스트 커버리지
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+.eslintcache
+*.tsbuildinfo
+
+# Python / FastAPI 가상환경, 캐시, 패키지 빌드 결과
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# MySQL 로컬 데이터와 덤프
+/mysql/data/
+/mysql/dumps/
+
+# Docker Compose 개인 설정과 로컬 비밀 파일
+/compose.local.yaml
+/docker/secrets/
+
+# AWS 로컬 설정과 자격 증명
+.aws/
+
+# Nginx 런타임 파일과 로컬 TLS 개인 키
+/nginx/logs/
+/nginx/run/
+/nginx/certs/*.key
+/nginx/certs/privkey*.pem
+
+# Colab / Jupyter 임시 파일과 PyTorch 학습 산출물
+.ipynb_checkpoints/
+/ai/data/raw/
+/ai/data/processed/
+/ai/checkpoints/
+/ai/runs/
+/ai/wandb/
+
+# 로그, 편집기 임시 파일, OS 메타데이터
+*.log
+*.swp
+*~
+.DS_Store
+Thumbs.db
